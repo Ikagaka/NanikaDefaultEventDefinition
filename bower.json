@@ -1,0 +1,14 @@
+{
+	"name": "NanikaDefaultEventDefinition",
+	"description": "NanikaDefaultEventDefinition - Nanika Default EventDefinition",
+	"dependencies": {
+	},
+	"main": "lib/NanikaDefaultEventDefinition.js",
+	"ignore": [
+		"**/.*",
+		"bower_components",
+		"node_modules",
+		"npm-debug.log",
+		"coverage"
+	]
+}

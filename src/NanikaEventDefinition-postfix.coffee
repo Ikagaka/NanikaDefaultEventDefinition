@@ -1,0 +1,1 @@
+@NanikaEventDefinition = NanikaEventDefinition
