@@ -7,5 +7,10 @@ NanikaEventDefinition.communicate =
 				Reference1: args.content
 			if args.args?
 				for value, index in args.args
-					headers["Reference#{index + 2}"] = value
+					if value?
+						headers["Reference#{index + 2}"] = value
+			if args.age?
+				headers.Age = args.age
+			if args.surface?
+				headers.Surface = args.surface
 			return headers
