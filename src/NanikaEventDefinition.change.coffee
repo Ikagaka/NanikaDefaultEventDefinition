@@ -1,19 +1,3 @@
-NanikaEventDefinition.firstboot =
-	request:
-		id: 'OnFirstBoot'
-		headers:
-			vanish_count: 0
-NanikaEventDefinition.boot =
-	request:
-		id: 'OnBoot'
-		headers:
-			shell_name: 0
-			halted:
-				name: 6
-				value: (value, nanika, request_args, optionals) -> if value then 'halt' else ''
-			halted_ghost:
-				name: 7
-				value: (value, nanika, request_args, optionals) -> if value? then value else ''
 NanikaEventDefinition.calling =
 	request:
 		id: 'OnGhostCalling'
@@ -22,7 +6,7 @@ NanikaEventDefinition.calling =
 			reason: 1
 			other_name: 2
 			other_path: 3
-NanikaEventDefinition.call_complete =
+NanikaEventDefinition.callcomplete =
 	request:
 		id: 'OnGhostCallComplete'
 		headers:
@@ -30,7 +14,7 @@ NanikaEventDefinition.call_complete =
 			other_script: 1
 			other_name: 2
 			other_shell_name: 7
-NanikaEventDefinition.other_booted =
+NanikaEventDefinition.otherbooted =
 	request:
 		id: 'OnOtherGhostBooted'
 		headers:
@@ -38,7 +22,7 @@ NanikaEventDefinition.other_booted =
 			other_script: 1
 			other_name: 2
 			other_shell_name: 7
-NanikaEventDefinition.other_changed =
+NanikaEventDefinition.otherchanged =
 	request:
 		id: 'OnOtherGhostChanged'
 		headers:
@@ -50,7 +34,7 @@ NanikaEventDefinition.other_changed =
 			to_name: 5
 			from_shell_name: 14
 			to_shell_name: 15
-NanikaEventDefinition.other_closed =
+NanikaEventDefinition.otherclosed =
 	request:
 		id: 'OnOtherGhostClosed'
 		headers:
